@@ -1,0 +1,38 @@
+<po-page-default>
+  <po-container class="background po-pb-2">
+    <div class="positin-fixed">
+      <div class="po-md-3 font-title">
+        {{'Imagem'}}
+      </div>
+      <div class="po-md-3 font-title">
+        {{'Nome'}}
+      </div>
+      <div class="po-md-3 font-title">
+        {{'Código'}}
+      </div>
+      <hr>
+    </div>
+    <div class="po-row hover" *ngFor="let item of pokemonList">
+      <div class=" po-md-3 po-pt-1">
+        <img [src]="item.image">
+      </div>
+      <div class="po-md-3 po-pt-1 align-self">
+        {{item.name | uppercase}}
+      </div>
+      <div class=" po-md-3 po-pt-1 align-self">
+        {{item.id}}
+      </div>
+      <div class=" po-md-3 po-pt-1 align-self " (click)="openModal(item.bigImage, item.name)">
+        <po-button p-label="Aumentar Imagem"></po-button>
+      </div>
+    </div>
+    <po-button
+      class="button-position"
+      p-label="Exibir Mais Pokemon"
+      p-type="primary"
+      (p-click)="fetchPokemon(pokemonData?.next)"></po-button>
+  </po-container>
+  <po-modal [p-title]="loadingName | uppercase">
+    <img [src]=loadingImage class="modalImage">
+  </po-modal>
+</po-page-default>

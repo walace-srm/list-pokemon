@@ -1,0 +1,52 @@
+::ng-deep {
+  .po-container {
+    background-color: #eceeee;
+    padding-bottom: 30px;
+  }
+}
+
+.hover:hover {
+  background-color: aliceblue;
+}
+
+div.btn {
+  width: 100%;
+  height: 40px;
+  border-radius: 3px;
+  border: solid 1px #eceeee;
+  cursor: pointer;
+}
+
+.button-position {
+  position: fixed;
+  bottom: 2%;
+  right: 85%;
+  padding-bottom: 12px;
+}
+
+hr {
+  border-color: #aaa;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.positin-fixed {
+  position: fixed;
+  width: 96%;
+  background-color: #eceeee;
+}
+
+.font-title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.align-self {
+  align-self: center;
+}
+
+.modalImage {
+  width: 90%;
+  height: 90%;
+}
+
