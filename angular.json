@@ -129,5 +129,8 @@
       }
     }
   },
-  "defaultProject": "display-pokemon"
+  "defaultProject": "display-pokemon",
+  "cli": {
+    "defaultCollection": "@ngrx/schematics"
+  }
 }
